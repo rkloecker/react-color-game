@@ -35,8 +35,8 @@ class App extends Component {
 
   areColorsEqual = () => {
     return (
-      this.state.firstClicked.col == this.state.secondClicked.col &&
-      this.state.firstClicked.id != this.state.secondClicked.id
+      this.state.firstClicked.col === this.state.secondClicked.col &&
+      this.state.firstClicked.id !== this.state.secondClicked.id
     );
   };
 
@@ -53,7 +53,7 @@ class App extends Component {
 
   // picks a card and evaluates: 'removes' if eq col
   evalCards = ({ id, col }) => {
-    if (this.state.cnt % 2 == 0) {
+    if (this.state.cnt % 2 === 0) {
       this.setState({ firstClicked: { id, col } }, this.removeCard);
     } else {
       this.setState({ secondClicked: { id, col } }, this.removeCard);
