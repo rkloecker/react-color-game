@@ -1,3 +1,10 @@
+## React Color Game - Have fun 
+
+## [deployed with gh-pages](https://rkloecker.github.io/react-color-game/)
+
+### React version of Matching Colors Game
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
